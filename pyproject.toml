@@ -1,0 +1,20 @@
+[project]
+name = "random-question-v1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Saketh Kaza", email = "kazasaketh@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.3",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+random-question-v1 = "random_question_v1.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
